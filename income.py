@@ -13,7 +13,8 @@ class ROICalculator():
         self.storage_amount = int(input("How much is storage?: "))
         self.misc_amount =  int(input("Total miscellaneous charges for your tenant?: "))
 
-        self.totalIncome = self.rent_amount + self.laundry_amount + self.storage_amount + self.misc_amount
+        self.totalIncome = self.rent_amount + self.laundry_amount + \
+            self.storage_amount + self.misc_amount
         return self.totalIncome
     
     def monthlyExpences(self):
@@ -37,7 +38,10 @@ class ROICalculator():
 
         self.utilities = self.water + self.electric + self.waste
 
-        self.totalExpense = self.taxes + self.insurance + self.utilities + self.hoa + self.landscaping + self.vacancy + self.repairs + self.capEx +self.propertyManagement+self.mortgage
+        self.totalExpense = self.taxes + self.insurance + \
+            self.utilities + self.hoa + self.landscaping + \
+            self.vacancy + self.repairs + self.capEx + \
+            self.propertyManagement+self.mortgage
 
         return self.totalExpense
     
